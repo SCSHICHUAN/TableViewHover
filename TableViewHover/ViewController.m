@@ -7,8 +7,8 @@
 
 #define w ([UIScreen mainScreen].bounds.size.width)
 #define h ([UIScreen mainScreen].bounds.size.height)
-#define hover 50
-#define header 100
+#define hover 100
+#define header 200
 
 #import "ViewController.h"
 #import "ChildTableView.h"
