@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		F6144F80263E3BDE002F0A22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6144F7F263E3BDE002F0A22 /* AppDelegate.m */; };
 		F6144F83263E3BDE002F0A22 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6144F82263E3BDE002F0A22 /* SceneDelegate.m */; };
-		F6144F86263E3BDE002F0A22 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6144F85263E3BDE002F0A22 /* ViewController.m */; };
 		F6144F89263E3BDE002F0A22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6144F87263E3BDE002F0A22 /* Main.storyboard */; };
 		F6144F8B263E3BDF002F0A22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6144F8A263E3BDF002F0A22 /* Assets.xcassets */; };
 		F6144F8E263E3BDF002F0A22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6144F8C263E3BDF002F0A22 /* LaunchScreen.storyboard */; };
 		F6144F91263E3BDF002F0A22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6144F90263E3BDF002F0A22 /* main.m */; };
+		F6144FA0263E3C6A002F0A22 /* ChildTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6144F9C263E3C6A002F0A22 /* ChildTableView.m */; };
+		F6144FA1263E3C6A002F0A22 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6144F9F263E3C6A002F0A22 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +23,15 @@
 		F6144F7F263E3BDE002F0A22 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F6144F81263E3BDE002F0A22 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		F6144F82263E3BDE002F0A22 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		F6144F84263E3BDE002F0A22 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F6144F85263E3BDE002F0A22 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F6144F88263E3BDE002F0A22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6144F8A263E3BDF002F0A22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6144F8D263E3BDF002F0A22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6144F8F263E3BDF002F0A22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6144F90263E3BDF002F0A22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F6144F9C263E3C6A002F0A22 /* ChildTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildTableView.m; sourceTree = "<group>"; };
+		F6144F9D263E3C6A002F0A22 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F6144F9E263E3C6A002F0A22 /* ChildTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildTableView.h; sourceTree = "<group>"; };
+		F6144F9F263E3C6A002F0A22 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +64,29 @@
 		F6144F7D263E3BDE002F0A22 /* TableViewHover */ = {
 			isa = PBXGroup;
 			children = (
+				F6144F9E263E3C6A002F0A22 /* ChildTableView.h */,
+				F6144F9C263E3C6A002F0A22 /* ChildTableView.m */,
+				F6144F9D263E3C6A002F0A22 /* ViewController.h */,
+				F6144F9F263E3C6A002F0A22 /* ViewController.m */,
+				F6144F98263E3BF1002F0A22 /* other */,
+			);
+			path = TableViewHover;
+			sourceTree = "<group>";
+		};
+		F6144F98263E3BF1002F0A22 /* other */ = {
+			isa = PBXGroup;
+			children = (
 				F6144F7E263E3BDE002F0A22 /* AppDelegate.h */,
 				F6144F7F263E3BDE002F0A22 /* AppDelegate.m */,
 				F6144F81263E3BDE002F0A22 /* SceneDelegate.h */,
 				F6144F82263E3BDE002F0A22 /* SceneDelegate.m */,
-				F6144F84263E3BDE002F0A22 /* ViewController.h */,
-				F6144F85263E3BDE002F0A22 /* ViewController.m */,
 				F6144F87263E3BDE002F0A22 /* Main.storyboard */,
 				F6144F8A263E3BDF002F0A22 /* Assets.xcassets */,
 				F6144F8C263E3BDF002F0A22 /* LaunchScreen.storyboard */,
-				F6144F8F263E3BDF002F0A22 /* Info.plist */,
 				F6144F90263E3BDF002F0A22 /* main.m */,
+				F6144F8F263E3BDF002F0A22 /* Info.plist */,
 			);
-			path = TableViewHover;
+			path = other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,10 +158,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6144F86263E3BDE002F0A22 /* ViewController.m in Sources */,
 				F6144F80263E3BDE002F0A22 /* AppDelegate.m in Sources */,
 				F6144F91263E3BDF002F0A22 /* main.m in Sources */,
+				F6144FA0263E3C6A002F0A22 /* ChildTableView.m in Sources */,
 				F6144F83263E3BDE002F0A22 /* SceneDelegate.m in Sources */,
+				F6144FA1263E3C6A002F0A22 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +307,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UC4C6H8RR8;
-				INFOPLIST_FILE = TableViewHover/Info.plist;
+				INFOPLIST_FILE = TableViewHover/other/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,7 +325,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UC4C6H8RR8;
-				INFOPLIST_FILE = TableViewHover/Info.plist;
+				INFOPLIST_FILE = TableViewHover/other/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
